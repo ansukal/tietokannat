@@ -15,7 +15,7 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
           <a class="navbar-brand" href="#">Tietokantamaailma</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,27 +90,27 @@
         </section>
     
         <section id="sql" class="py-5 bg-light">
-          <div class="row">
-            <div class="col-md-6">
-                <h2 id="sql">SQL</h2>
-                <p>SQL-kieli (Structured Query Language) on relaatiotietokannoissa käytetty kieli. Tietokantaan voi tehdä erilaisia hakuja, muutoksia ja lisäyksiä käyttämällä SQL-kieltä ja sen komentoja. Komennot muodostuvat avainsanoista (SELECT ja WHERE) tai muista arvoista, kuten taulujen ja sarakkeiden nimistä.</p>
-                <p>Otetaan esimerkki:</p>
-                <p>Meillä on tietokanta, jossa on hedelmiä ja niiden hintoja. Haluamme tietää banaanin hinnan, joten voimme hakea sen käyttämällä komentoa:</p>
-                <pre><code>SELECT hinta FROM Hedelmat WHERE nimi='banaani';</code></pre>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src="kissanayttely.jpg" alt="Kuvassa malli relaatiotietokannasta" title="SQL-tietokanta esimerkki" class="img-fluid custom-image" />
-                </a>
-                <p class="no-underline">Kuvassa on malli relaatiotietokannasta. Tietokanta on luotu kissanäyttelyyn ja siitä käy ilmi taulujen väliset suhteet</p>
-            </div>
-            <div class="col-md-6">
-                <h2 id="nosql">NoSQL</h2>
-                <p>NoSQL-tietokanta eroaa perinteisestä relaatiotietokannasta siinä, että se ei käytä relaatiomallia tietojen tallentamiseen. Relaatiotietokannat perustuvat taulukkomalliin, jossa tiedot tallennetaan tauluihin, jotka ovat keskenään kytköksissä. Sen sijaan NoSQL-tietokannat käyttävät esimerkiksi avain-arvo-, dokumentti-, sarake- tai grafiikkamallia tiedon järjestämiseen.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src="mongodb.jpg" alt='Kuva NoSQL tietokannasta' title='NoSQL-tietokanta esimerkki' class="img-fluid custom-image" />
-                </a>
-            </div>
-        </div>
+          <div class="container">
+            <h2>SQL</h2>
+            <p>SQL-kieli (Structured Query Language) on relaatiotietokannoissa käytetty kieli. Tietokantaan voi tehdä erilaisia hakuja, muutoksia ja lisäyksiä käyttämällä SQL-kieltä ja sen komentoja. Komennot muodostuvat avainsanoista (SELECT ja WHERE) tai muista arvoista, kuten taulujen ja sarakkeiden nimistä.</p>
+            <p>Otetaan esimerkki:</p>
+            <p>Meillä on tietokanta, jossa on hedelmiä ja niiden hintoja. Haluamme tietää banaanin hinnan, joten voimme hakea sen käyttämällä komentoa:</p>
+            <pre><code>SELECT hinta FROM Hedelmat WHERE nimi='banaani';</code></pre>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./kuvat/kissanayttely.jpg" alt="Kuvassa malli relaatiotietokannasta" title="SQL-tietokanta esimerkki" class="img-fluid custom-image" />
+            </a>
+            <p class="no-underline">Kuvassa on malli relaatiotietokannasta. Tietokanta on luotu kissanäyttelyyn ja siitä käy ilmi taulujen väliset suhteet</p>
+          </div>
+        </section>
         
+        <section id="nosql" class="py-5 bg-light">
+          <div class="container">
+            <h2 id="nosql">NoSQL</h2>
+              <p>NoSQL-tietokanta eroaa perinteisestä relaatiotietokannasta siinä, että se ei käytä relaatiomallia tietojen tallentamiseen. Relaatiotietokannat perustuvat taulukkomalliin, jossa tiedot tallennetaan tauluihin, jotka ovat keskenään kytköksissä. Sen sijaan NoSQL-tietokannat käyttävät esimerkiksi avain-arvo-, dokumentti-, sarake- tai grafiikkamallia tiedon järjestämiseen.</p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./kuvat/MongoDB_kissa.png" alt='Kuva NoSQL tietokannasta' title='NoSQL-tietokanta esimerkki' class="img-fluid custom-image" />
+              </a>
+          </div>
         </section>
 
         <section>
