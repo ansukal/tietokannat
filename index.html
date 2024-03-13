@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tietokantamaailma</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tyylit.css">
+</head>
+<body>
+    <header class="bg-light text-center py-5">
+        <div class="container">
+            <h1>Tietokantamaailma</h1>
+            <p><i>Tietoa ja kantoja juuri sinulle</i></p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Tietokantamaailma</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="#johdanto">Johdanto</a></li>
+              <li class="nav-item"><a class="nav-link" href="#perustiedot">Mikä ihmeen tietokanta?</a></li>
+              <li class="nav-item"><a class="nav-link" href="#sql">SQL ja NoSQL</a></li>
+              <li class="nav-item"><a class="nav-link" href="#suunnittelu">Oma tietokanta - kuinka aloitan?</a></li>
+              <li class="nav-item"><a class="nav-link" href="#yhteys">Ota yhteyttä</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+    <main>
+        <section id="johdanto" class="py-5">
+            <div class="container">
+                <h2>Johdanto</h2>
+                <p>Tietokannat ovat olennainen osa nykyaikaista tietotekniikkaa ja tietojenkäsittelyä. Ne tarjoavat tehokkaan ja jäsennellyn tavan tallentaa, hallita ja hakea tietoja erilaisista lähteistä ja sovelluksista. Tietokannat ovat keskeisiä monissa eri yhteyksissä, kuten liike-elämässä, tieteessä, terveydenhuollossa ja julkishallinnossa, ja niiden käyttö on yleistynyt huomattavasti viime vuosikymmeninä.
+                <br />
+                <br />
+                Yksi tietokantojen tärkeimmistä eduista on niiden kyky tallentaa suuria määriä tietoa jäsennellysti ja tehokkaasti. Tietokannat koostuvat taulukoista, joissa tiedot on jaettu riveihin ja sarakkeisiin. Tämä rakenteellinen lähestymistapa mahdollistaa tietojen helpon organisoimisen ja hakuoperaatioiden suorittamisen.
+                <br />
+                <br />
+                Tietokannoilla on myös tärkeä rooli tietojen eheyden ja turvallisuuden varmistamisessa. Ne voivat sisältää mekanismeja, kuten eheyssääntöjä ja käyttöoikeuksien hallintaa, jotka varmistavat, että tietoja käsitellään oikein ja että niihin pääsee vain valtuutetut käyttäjät.
+                <br />
+                <br />
+                Tietokantojen käyttö on laajaa ja monipuolista eri aloilla. Esimerkiksi yritykset voivat käyttää tietokantoja asiakas- ja tilaustietojen hallintaan, varaston seurantaan ja liiketoiminnan analysointiin. Tieteellisissä tutkimuksissa tietokannat voivat sisältää suuria määriä tieteellistä tietoa, kuten geneettisiä sekvenssejä tai ilmastotietoja. Terveydenhuollossa tietokannat voivat sisältää potilastietoja ja lääketieteellistä tutkimusta.
+                <br />
+                <br />
+                Tietokantojen kehitys on jatkuvaa, ja uusia teknologioita ja lähestymistapoja tulee jatkuvasti markkinoille. Esimerkiksi pilvitietokannat tarjoavat joustavan ja skaalautuvan tavan hallita tietoja verkon kautta, kun taas Big Data -teknologiat mahdollistavat valtavien tietomäärien käsittelyn ja analysoinnin reaaliajassa.
+                <br />
+                <br />
+                Kaiken kaikkiaan tietokannat ovat olennainen osa nykyaikaista tietotekniikkaa ja ovat välttämättömiä monille organisaatioille ja sovelluksille. Niiden avulla voidaan tallentaa, hallita ja analysoida valtavia määriä tietoa tehokkaasti ja tarkasti, mikä auttaa organisaatioita tekemään parempia päätöksiä ja saavuttamaan liiketoimintatavoitteitaan.</p>
+              </div>
+        </section>
+
+        <section id="perustiedot" class="py-5 bg-light">
+            <div class="container">
+                <h2>Tietokantojen perusteet</h2>
+                <p class="font-weight-bold">Tietokanta on keskeinen työkalu tietojen keräämiseen, tallentamiseen ja järjestämiseen, ja se tarjoaa monia etuja verrattuna yksinkertaisiin 
+                  luetteloihin tai laskentataulukoihin. Kun tietojen määrä ja monimutkaisuus kasvavat, tietokanta tarjoaa rakenteen ja tehokkuuden, 
+                  jota tarvitaan tietojen tehokkaaseen hallintaan ja käyttöön.
+                  <br />
+                  Tässä muutamia syitä, miksi tietokannan käyttö on hyödyllistä:
+                  <br />
+                  <br />
+                  1. Tietojen järjestäminen: Tietokanta mahdollistaa tietojen järjestämisen loogisiin taulukoihin ja suhteisiin, mikä helpottaa tietojen ylläpitoa ja hallintaa.
+                  <br />
+                  <br />
+                  2. Tietojen integriteetti: Tietokannan hallintajärjestelmä (DBMS) voi asettaa eheyssääntöjä ja varmistaa, että tietojen eheys säilyy, estäen esimerkiksi epäkelpojen tietojen tallentamisen.
+                  <br />
+                  <br />
+                  3. Tietojen tehokas hakeminen: Tietokanta mahdollistaa tehokkaan kyselyjen suorittamisen tietojen hakemiseksi, päivittämiseksi ja poistamiseksi.
+                  <br />
+                  <br />
+                  4. Tietojen skaalautuvuus: Tietokanta skaalautuu paremmin suurille tietomäärille kuin yksinkertaiset luettelot tai laskentataulukot.
+                  <br />
+                  <br />
+                  5. Samanaikaisten käyttäjien hallinta: DBMS voi hallita useiden käyttäjien samanaikaista pääsyä tietokantaan ja varmistaa, että tietojen käsittely tapahtuu turvallisesti ja tehokkaasti.
+                  <br />
+                  <br />
+                  6. Tietoturva: Tietokannan hallintajärjestelmä voi tarjota tietoturvaominaisuuksia, kuten käyttöoikeuksien hallintaa ja tietojen salauksen, mikä suojaa tietoja luvattomalta käytöltä ja manipuloinnilta.
+                  <br />
+                  <br />
+                  Kaiken kaikkiaan tietokannan käyttö helpottaa monimutkaisten tietojen hallintaa ja käyttöä, mikä tekee siitä olennaisen osan monia erilaisia sovelluksia ja organisaatioita.</p>
+              </div>
+        </section>
+    
+        <section id="sql" class="py-5 bg-light">
+          <div class="row">
+            <div class="col-md-6">
+                <h2 id="sql">SQL</h2>
+                <p>SQL-kieli (Structured Query Language) on relaatiotietokannoissa käytetty kieli. Tietokantaan voi tehdä erilaisia hakuja, muutoksia ja lisäyksiä käyttämällä SQL-kieltä ja sen komentoja. Komennot muodostuvat avainsanoista (SELECT ja WHERE) tai muista arvoista, kuten taulujen ja sarakkeiden nimistä.</p>
+                <p>Otetaan esimerkki:</p>
+                <p>Meillä on tietokanta, jossa on hedelmiä ja niiden hintoja. Haluamme tietää banaanin hinnan, joten voimme hakea sen käyttämällä komentoa:</p>
+                <pre><code>SELECT hinta FROM Hedelmat WHERE nimi='banaani';</code></pre>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="kissanayttely.jpg" alt="Kuvassa malli relaatiotietokannasta" title="SQL-tietokanta esimerkki" class="img-fluid custom-image" />
+                </a>
+                <p class="no-underline">Kuvassa on malli relaatiotietokannasta. Tietokanta on luotu kissanäyttelyyn ja siitä käy ilmi taulujen väliset suhteet</p>
+            </div>
+            <div class="col-md-6">
+                <h2 id="nosql">NoSQL</h2>
+                <p>NoSQL-tietokanta eroaa perinteisestä relaatiotietokannasta siinä, että se ei käytä relaatiomallia tietojen tallentamiseen. Relaatiotietokannat perustuvat taulukkomalliin, jossa tiedot tallennetaan tauluihin, jotka ovat keskenään kytköksissä. Sen sijaan NoSQL-tietokannat käyttävät esimerkiksi avain-arvo-, dokumentti-, sarake- tai grafiikkamallia tiedon järjestämiseen.</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="mongodb.jpg" alt='Kuva NoSQL tietokannasta' title='NoSQL-tietokanta esimerkki' class="img-fluid custom-image" />
+                </a>
+            </div>
+        </div>
+        
+        </section>
+
+        <section>
+          <div class="container">
+            <h2 id="suunnittelu">Tietokannan suunnittelu ja optimointi</h2>
+            <p>Tietokannan suunnittelu ja optimointi ovat keskeisiä osa-alueita, joilla varmistetaan tietokannan
+              tehokas toiminta ja optimaalinen suorituskyky. Tässä on joitakin perusperiaatteita ja käytäntöjä tietokannan suunnittelun
+              ja optimoinnin kannalta:
+              <br />
+              <br />
+              Tarpeiden määrittely: Ihan ensimmäinen askel on selvittää tietokannalle asetetut tarpeet ja tavoitteet. Mihin suunnittelet 
+              tietokantaa, mitä se tulisi sisältämään ja miten sen tulisi toimia. Määrittely sisältää muun muassa tietojen tyypit, jotka voivat
+              olla vaikka asiakas- ja tilaustiedot, tuotteiden tiedot, tapahtumatiedot jne.
+              <br />
+              <br />
+              Tietojen määrän arviointi on tärkeää tietokannan skaalautuvuuden kannalta, jotta pystytään varmistamaan, että se pysyy suorityskykyisenä
+              myös suurilla tietomäärillä. Määrän arviointi auttaa sinua myös suunnittelemaan tietokannan rakenteen ja indeksit optimoidaksesi kyselyjen suorituskyvyn.
+              <br />
+              <br />
+              Tietoturva- ja eheytyssääntöjen määritys tulee myös tehdä. Millaisia tietoturva- ja eheytyssääntöjä tietokannassa tarvitaan. Tuleeko käyttöön esimerkiksi
+              käyttäjien todennus ja käyttöoikeuksian hallintaa. Eheytyssäännöt varmistavat tietojen oikeellisuuden ja eheyden.
+              <br /> 
+              <br />
+              Tietokannalla on hyvä olla luja perusta, koska tällöin tietokanta toimii hyvin.
+            </p>
+          
+            <h2>Tässä on kaksi videota, jotka auttavat sinua luomaan oman tietokannan.</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e0NYZ4cl8XU?si=2PD5HyTXzdOW8BUP" title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </div>
+            <br />
+            <br />
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/XA80Y2JIwXE?si=Wrkcf1CEV8J34v5H" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          
+        </section>
+
+        <section id="yhteys" class="py-5 bg-light">
+            <div class="container">
+                <h2>Ota minuun yhteyttä:</h2>
+                <form action="submit.php" method="post">
+                  <div class="form-group">
+                    <label for="name">Nimi:</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Sähköposti:</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Viesti:</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Lähetä</button>
+                </form>
+              </div>
+              
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <h3>Yhteystiedot</h3>
+            <p>Ansu Kailaanmäki &nbsp; 044 234 0042</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
