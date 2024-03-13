@@ -1,5 +1,9 @@
 /* Reset */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .navbar.fixed-top {
     position: fixed;
@@ -30,7 +34,7 @@ body {
 
 /* Header */
 header {
-    
+    background: #f8f9fa;
     color: #333;
     padding: 20px 0;
 }
@@ -111,7 +115,7 @@ form button:hover {
 
 /* Footer */
 footer {
-    
+    background-color: #343a40;
     color: #fff;
     text-align: center;
     padding: 20px 0;
