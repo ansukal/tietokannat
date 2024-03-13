@@ -23,6 +23,7 @@ body {
     line-height: 1.6;
     background-image: url('/kuvat/MiningRig.jpg');
     background-size: cover;
+    height: 100vh; /* Käytä koko ikkunan korkeutta */
 }
 
 .container {
