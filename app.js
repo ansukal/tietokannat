@@ -1,7 +1,4 @@
-{
-  "buildpacks": [
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
-    }
-  ]
+function toggleNav() {
+  // Piilota togglenavi, jos se on avoinna
+  $('.navbar-collapse').collapse('hide');
 }
