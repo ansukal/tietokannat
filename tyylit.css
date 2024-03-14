@@ -10,7 +10,7 @@
     position: fixed;
     width: 100%;
     top: 0;
-    
+    z-index: 1000; /* Varmistetaan, että palkki on päällimmäisenä */
 }
 
 /* Asetetaan sivun yläreunaan tilaa varaamaan navigointipalkin korkeus */
