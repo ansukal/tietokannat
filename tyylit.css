@@ -9,20 +9,14 @@ header {
     background: #f8f9fa;
     color: #333;
     padding: 20px 0;
-    margin-bottom: 40px; /* Lisätään marginaali alapuolelle */
+    margin-bottom: 20px; /* Pienennetty marginaalia */
 }
 
 /* Navbar */
 .navbar {
     background-color: #343a40;
     width: 100%;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        position: fixed;
-    }
+    margin-bottom: 20px; /* Pienennetty marginaalia */
 }
 
 .navbar-brand,
@@ -45,7 +39,6 @@ header {
 section {
     padding: 20px 0;
     background-color: rgba(255, 255, 255, 0.8);
-    /* Vaihdettiin taustan väriä läpinäkyvästä valkoiseen */
 }
 
 /* Form */
@@ -67,7 +60,7 @@ form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #fff; /* Vaihdettiin taustaväriä */
+    background-color: #fff;
 }
 
 form textarea {
@@ -107,4 +100,3 @@ body {
     background-size: cover;
     height: 100vh;
 }
-
