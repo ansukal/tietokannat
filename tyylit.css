@@ -5,23 +5,25 @@
     box-sizing: border-box;
 }
 
-/* Kiinnitetään navigointipalkki yläreunaan */
-.navbar {
+.navbar.fixed-top {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000; /* Varmistetaan, että palkki on päällimmäisenä */
+    z-index: 1000;
 }
 
-/* Asetetaan sivun yläreunaan tilaa varaamaan navigointipalkin korkeus */
+@media (max-width: 991.98px) {
+    .navbar.fixed-top {
+        position: sticky;
+    }
+}
+
 body {
-    padding-top: 56px; /* Muuta tarvittaessa navigointipalkin korkeuden mukaan */
-}
-
-/* Asetetaan korkeus navbar-brandille, jotta se näkyy keskitetysti palkissa */
-.navbar-brand {
-    height: 56px; /* Muuta tarvittaessa navigointipalkin korkeuden mukaan */
-    line-height: 56px; /* Keskitä teksti palkin korkeuden mukaan */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('/kuvat/MiningRig.jpg');
+    background-size: cover;
+    height: 100vh; /* Käytä koko ikkunan korkeutta */
 }
 
 .container {
