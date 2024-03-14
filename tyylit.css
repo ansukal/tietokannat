@@ -8,10 +8,18 @@
 /* Kiinnitetään navigointipalkki yläreunaan */
 .navbar {
     position: fixed;
-    width: 100%;
+    z-index: 3;
     top: 0;
-    z-index: 1000; /* Varmistetaan, että palkki on päällimmäisenä */
+    height: 0;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
 }
+    
+
 
 /* Asetetaan sivun yläreunaan tilaa varaamaan navigointipalkin korkeus */
 body {
