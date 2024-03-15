@@ -6,7 +6,7 @@
 }
 
 header {
-    background: #f8f9fa;
+
     color: #333;
     padding: 20px 0;
     margin-bottom: 20px; /* Pienennetty marginaalia */
@@ -98,7 +98,7 @@ body {
     line-height: 1.6;
     background-image: url('./kuvat/MiningRig.jpg');
     background-size: cover;
-    height: 100%;
+    
 }
 
 #btn-back-to-top {
