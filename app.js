@@ -3,17 +3,18 @@ function toggleNav() {
   $('.navbar-collapse').collapse('hide');
 }
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-      if ($(this).scrollTop() > 100) { // Näytä ylös-nappi, kun sivua on vieritetty 100px alaspäin
-          $('.back-to-top').addClass('show');
+$(document).ready(function () {
+  // Näytä tai piilota ylös-nappi sen mukaan, onko käyttäjä jo ylhäällä vai ei
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) { // Jos käyttäjä on vierittänyt yli 100 pikseliä
+          $('#scrollToTopBtn').fadeIn();
       } else {
-          $('.back-to-top').removeClass('show');
+          $('#scrollToTopBtn').fadeOut();
       }
   });
 
-  $('.back-to-top').click(function(){
-      $('html, body').animate({scrollTop : 0},800); // Animaatio vierittää sivun ylös
-      return false;
-  });
+  // Kun käyttäjä klikkaa ylös-nappia, vieritä ylös
+  function scrollToTop() {
+      $('html, body').animate({ scrollTop: 0 }, 'slow');
+  }
 });
