@@ -213,12 +213,33 @@
         </div>
     </footer>
 
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Siirry ylös">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     
 <!-- jQuery, Popper.js, Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script>
+      // Kun dokumentti on ladattu
+      $(document).ready(function () {
+          // Näytä tai piilota ylös-nappi sen mukaan, onko käyttäjä jo ylhäällä vai ei
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) { // Jos käyttäjä on vierittänyt yli 100 pikseliä
+                  $('#scrollToTopBtn').fadeIn();
+              } else {
+                  $('#scrollToTopBtn').fadeOut();
+              }
+          });
+
+          // Kun käyttäjä klikkaa ylös-nappia, vieritä ylös
+          function scrollToTop() {
+              $('html, body').animate({ scrollTop: 0 }, 'slow');
+          }
+      });
+    </script>
     
 </body>
 </html>
