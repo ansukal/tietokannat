@@ -6,7 +6,7 @@
 }
 
 header {
-
+    background: #f8f9fa;
     color: #333;
     padding: 20px 0;
     margin-bottom: 20px; /* Pienennetty marginaalia */
@@ -38,7 +38,7 @@ header {
 /* Main Sections */
 section {
     padding: 20px 0;
-    
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Form */
