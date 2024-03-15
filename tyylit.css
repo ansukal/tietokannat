@@ -1,8 +1,10 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('./kuvat/MiningRig.jpg');
+    background-size: cover;
+    
 }
 
 header {
@@ -92,14 +94,7 @@ footer p {
     margin-bottom: 0;
 }
 
-/* Background */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-image: url('./kuvat/MiningRig.jpg');
-    background-size: cover;
-    
-}
+
 
 #btn-back-to-top {
     position: fixed; /* Muutettu 'relative' -> 'fixed' */
