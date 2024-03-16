@@ -27,3 +27,19 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  
+  event.preventDefault();
+
+  // Haetaan lomakkeen tiedot
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  // Tulostetaan tiedot konsoliin
+  console.log('Nimi:', name);
+  console.log('Sähköposti:', email);
+  console.log('Viesti:', message);
+
+});
