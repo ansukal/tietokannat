@@ -93,8 +93,6 @@ footer p {
     margin-bottom: 0;
 }
 
-
-
 #btn-back-to-top {
     position: fixed; /* Muutettu 'relative' -> 'fixed' */
     bottom: 20px; /* Muutettu '50px' -> '20px' */
