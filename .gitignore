@@ -1,0 +1,5 @@
+# Tiedostot ja kansiot, jotka halutaan jättää pois Git-seurannasta
+node_modules/
+dist/
+.env
+
