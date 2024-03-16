@@ -1,13 +1,11 @@
 /* Background */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('MiningRig.jpg');
     background-size: cover;
     
 }
 
 header {
-    background: #f8f9fa;
     color: #333;
     padding: 20px 0;
     margin-bottom: 20px; /* Pienennetty marginaalia */
