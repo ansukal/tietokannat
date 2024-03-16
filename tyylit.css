@@ -1,7 +1,7 @@
 /* Background */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('kuvat/MiningRig.jpg');
+    background-image: url('/kuvat/MiningRig.jpg');
     background-size: cover;
     
 }
