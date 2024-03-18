@@ -44,39 +44,4 @@ function backToTop() {
 
 //});
 
-document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      
-      var form = this;
-      var formData = new FormData(form);
 
-      // Tulosta tiedot konsoliin
-      console.log("Lähetettävät tiedot:");
-      formData.forEach(function(value, key){
-          console.log(key + ': ' + value);
-      });
-
-      fetch('submit.php', {
-          method: 'POST',
-          body: formData
-      })
-      .then(response => {
-          if (response.ok) {
-              // Näytä käyttäjälle viesti sivustolla
-              var responseMessage = document.getElementById('response-message');
-              responseMessage.textContent = "Lähetys onnistui";
-              form.reset(); // Tyhjennä lomakekentät
-              return response.json();
-          }
-          throw new Error('Viestin lähetys epäonnistui');
-      })
-      .then(data => {
-          // Voit käyttää data-objektia, jos haluat näyttää jotain muuta viestiä käyttäjälle
-          console.log(data);
-      })
-      .catch(error => {
-          console.error('Virhe:', error);
-      });
-  });
-});
