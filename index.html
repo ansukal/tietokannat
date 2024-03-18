@@ -247,36 +247,23 @@
     <script src="app.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      
-      var form = this;
-      var formData = new FormData(form);
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        var form = this;
+        var formData = new FormData(form);
 
-      // Tulosta tiedot konsoliin
-      console.log("Lähetettävät tiedot:");
-      formData.forEach(function(value, key){
-          console.log(key + ': ' + value);
-      })
+        // Tulosta tiedot konsoliin
+        console.log("Lähetettävät tiedot:");
+        formData.forEach(function(value, key){
+            console.log(key + ': ' + value);
+        });
 
-      .then(response => {
-          if (console.log(key + ': ' + value)) {
-              // Näytä käyttäjälle viesti sivustolla
-              var responseMessage = document.getElementById('response-message');
-              responseMessage.textContent = "Lähetys onnistui";
-              form.reset(); // Tyhjennä lomakekentät
-              return response.json();
-          }
-          throw new Error('Viestin lähetys epäonnistui');
-      })
-      .then(data => {
-          // Voit käyttää data-objektia, jos haluat näyttää jotain muuta viestiä käyttäjälle
-          console.log(data);
-      })
-      .catch(error => {
-          console.error('Virhe:', error);
-      });
-  });
+        // Näytä käyttäjälle viesti sivustolla
+        var responseMessage = document.getElementById('response-message');
+        responseMessage.textContent = "Lähetys onnistui";
+        form.reset(); // Tyhjennä lomakekentät
+    });
 });
     </script>
   
