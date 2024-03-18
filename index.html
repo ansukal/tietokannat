@@ -257,12 +257,8 @@
       console.log("Lähetettävät tiedot:");
       formData.forEach(function(value, key){
           console.log(key + ': ' + value);
-      });
-
-      fetch('submit.php', {
-          method: 'POST',
-          body: formData
       })
+
       .then(response => {
           if (response.ok) {
               // Näytä käyttäjälle viesti sivustolla
