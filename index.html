@@ -255,9 +255,9 @@
 
         // Tulosta tiedot konsoliin
         console.log("Lähetettävät tiedot:");
-        formData.forEach(function(value, key){
-            console.log(key + ': ' + value);
-        });
+        for (var pair of formData.entries()) {
+            console.log(pair[0] + ': ' + pair[1]);
+        }
 
         // Näytä käyttäjälle viesti sivustolla
         var responseMessage = document.getElementById('response-message');
@@ -265,6 +265,7 @@
         form.reset(); // Tyhjennä lomakekentät
     });
 });
+
     </script>
   
 </body>
