@@ -26,7 +26,7 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="#">Tietokantamaailma</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -163,19 +163,6 @@
               <br />
               Tietokannalla on hyvä olla luja perusta, koska tällöin tietokanta toimii hyvin.
             </p>
-          
-            <h2>Tässä on kaksi videota, jotka auttavat sinua luomaan oman tietokannan.</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e0NYZ4cl8XU?si=2PD5HyTXzdOW8BUP" title="YouTube video player"  
-                allowfullscreen></iframe>
-            </div>
-            <br />
-            <br />
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/XA80Y2JIwXE?si=Wrkcf1CEV8J34v5H" title="YouTube video player" 
-                frameborder="0" 
-                allowfullscreen></iframe>
-            </div>
           </div>
           
         </section>
@@ -183,7 +170,8 @@
         <section id="yhteys" class="py-5">
           <div class="container">
               <h2>Ota minuun yhteyttä:</h2>
-              <form id="contact-form" action="submit.php" method="post">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3535be85-2e22-427c-ac70-9e5fcdcb031b">
                   <div class="form-group">
                       <label for="name">Nimi:</label>
                       <input
@@ -214,6 +202,7 @@
                         required
                       ></textarea>
                   </div>
+                  <div class="h-captcha" data-captcha="true"></div>
                   <button type="submit" class="btn btn-primary">Lähetä</button>
               </form>
 

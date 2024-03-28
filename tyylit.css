@@ -31,7 +31,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #343a40;
+    background-color: #069e64;
     width: 100%;
     margin-bottom: 20px; /* Pienennetty marginaalia */
 }
@@ -60,7 +60,7 @@ section {
 
 /* Custom CSS */
 #contact-form {
-    max-width: 400px; /* Rajoitetaan lomakkeen leveys */
+    max-width: 600px; /* Rajoitetaan lomakkeen leveys */
     margin: auto; /* Keskitys näytölle */
 }
 
@@ -99,7 +99,7 @@ section {
 }
 
 #contact-form button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #748ba3;
 }
 
 #response-message {
