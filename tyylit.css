@@ -21,9 +21,9 @@ a {
     background-size: cover;
     height: 300px;
     color: rgb(0, 0, 0);
-    text-align: right;
+    text-align: left;
     display: flex;
-    justify-content: left;
+    
     
 }
 
