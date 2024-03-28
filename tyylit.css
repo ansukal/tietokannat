@@ -71,18 +71,24 @@ form {
 form h2 {
     margin-bottom: 20px;
     text-align: center;
+    color: #007bff; /* Lisätty väritys otsikolle */
 }
 
 form label {
     display: block;
     margin-bottom: 10px;
+    font-weight: bold; /* Lisätty lihavointi labeleille */
 }
 
-/* Rajoitetaan sähköposti- ja viestikentän leveys */
+form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%;
-    max-width: 100%; /* Lisätty rajoitus */
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 form textarea {
@@ -103,6 +109,17 @@ form button {
 form button:hover {
     background-color: #0056b3;
 }
+
+/* Väritys captcha-laatikolle */
+.h-captcha {
+    margin-bottom: 10px;
+}
+
+/* Pienennetään fonttikokoa lähetä-napille */
+form button[type="submit"] {
+    font-size: 16px;
+}
+
 
 /* Footer */
 footer {
