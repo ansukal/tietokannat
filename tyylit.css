@@ -58,45 +58,37 @@ section {
 
 }
 
-/* Form */
-form {
-    margin: 20px auto;
-    max-width: 500px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Custom CSS */
+#contact-form {
+    max-width: 400px; /* Rajoitetaan lomakkeen leveys */
+    margin: auto; /* Keskitys näytölle */
 }
 
-form h2 {
+#contact-form .form-group {
     margin-bottom: 20px;
-    text-align: center;
-    color: #007bff; /* Lisätty väritys otsikolle */
 }
 
-form label {
+#contact-form label {
     display: block;
-    margin-bottom: 10px;
-    font-weight: bold; /* Lisätty lihavointi labeleille */
+    margin-bottom: 5px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%; /* Täyttää lomakkeen leveyden */
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-form textarea {
+#contact-form textarea {
     height: 150px;
 }
 
-form button {
-    width: 100%;
+#contact-form button[type="submit"] {
+    width: 100%; /* Täyttää lomakkeen leveyden */
     padding: 12px;
     background-color: #007bff;
     color: #fff;
@@ -106,8 +98,13 @@ form button {
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
+#contact-form button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+#response-message {
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* Väritys captcha-laatikolle */

@@ -183,8 +183,7 @@
         <section id="yhteys" class="py-5">
           <div class="container">
               <h2>Ota minuun yhteyttä:</h2>
-              <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="3535be85-2e22-427c-ac70-9e5fcdcb031b"
+              <form id="contact-form" action="submit.php" method="post">
                   <div class="form-group">
                       <label for="name">Nimi:</label>
                       <input
@@ -215,11 +214,10 @@
                         required
                       ></textarea>
                   </div>
-                  <div class="h-captcha" data-captcha="true"></div>
                   <button type="submit" class="btn btn-primary">Lähetä</button>
               </form>
 
-              
+              <p id="response-message"></p>
           </div>
         </section>
     </main>
@@ -239,7 +237,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="app.js"></script>
-    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          document.getElementById('contact-form').addEventListener('submit', function (event) {
+              event.preventDefault();
+              
+            
+  
+              // Tyhjennä lomakekentät
+              form.reset(); 
+          });
+      });
+  </script>
   
   
 </body>
