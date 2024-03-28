@@ -13,11 +13,9 @@ body {
 }
 
 .header {
-    background-image: url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-    background-position: center;
+    
     height: 300px; /* Määritä headerin korkeus tarpeen mukaan */
-    color: white; /* Varmista, että tekstin väri on selvästi näkyvä taustakuvaan nähden */
+    color: rgb(0, 0, 0); 
     text-align: right;
     display: flex;
     justify-content: right;
