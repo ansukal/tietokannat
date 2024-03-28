@@ -51,7 +51,7 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-color: #ffffff; /* Vaihdettu vaakaviivojen väri */
+    background-color: transparent; /* Läpinäkyvä tausta */
     color: #000000; /* Vaihdettu vaakaviivojen väri */
 }
 
