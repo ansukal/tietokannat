@@ -1,57 +1,49 @@
 <!DOCTYPE html>
 <html lang="fi">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Tietokantamaailma</title>
+  <title>Tietokantamaailma</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="tyylit.css">
+  <link rel="stylesheet" href="tyylit.css">
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   
-    <header class="header" >
-        <div class="container">
-          
-            <h1>Tietokantamaailma</h1>
-            <p><i>Tietoa ja kantoja juuri sinulle</i></p>
-            
-        </div>
-    </header>
+  <header class="header">
+    <div class="container">
+      <h1>Tietokantamaailma</h1>
+      <p><i>Tietoa ja kantoja juuri sinulle</i></p>
+    </div>
+  </header>
 
-    <button
-    type="button"
-    class="btn btn-danger btn-floating btn-lg"
-    id="btn-back-to-top">
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
     <i class="fas fa-arrow-up"></i>
-    </button>
+  </button>
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Tietokantamaailma</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Tietokantamaailma</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#johdanto">Johdanto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#perustiedot">Mikä ihmeen tietokanta?</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sql">SQL ja NoSQL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#suunnittelu">Ohjevideot</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#yhteys">Ota yhteyttä</a></li>
-                </ul>
-            </div>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#johdanto">Johdanto</a></li>
+                <li class="nav-item"><a class="nav-link" href="#perustiedot">Mikä ihmeen tietokanta?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sql">SQL ja NoSQL</a></li>
+                <li class="nav-item"><a class="nav-link" href="#suunnittelu">Ohjevideot</a></li>
+                <li class="nav-item"><a class="nav-link" href="#yhteys">Ota yhteyttä</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+  </nav>
   
       
 
@@ -88,7 +80,7 @@
           </div>
         </section>
 
-        <section id="perustiedot" class="py-5 bg-light">
+        <section id="perustiedot" class="py-5">
           <div class="container">
                 <h2>Tietokantojen perusteet</h2>
                 <p class="font-weight-bold">Tietokanta on keskeinen työkalu tietojen keräämiseen, tallentamiseen ja järjestämiseen, ja se tarjoaa monia etuja verrattuna yksinkertaisiin 
@@ -123,7 +115,7 @@
           </div>
         </section>
     
-        <section id="sql" class="py-5 bg-light">
+        <section id="sql" class="py-5">
           <div class="container">
             <h2>SQL</h2>
             <p>SQL-kieli (Structured Query Language) on relaatiotietokannoissa käytetty kieli. Tietokantaan voi tehdä erilaisia hakuja, muutoksia ja lisäyksiä käyttämällä SQL-kieltä ja sen komentoja. Komennot muodostuvat avainsanoista (SELECT ja WHERE) tai muista arvoista, kuten taulujen ja sarakkeiden nimistä.</p>
@@ -137,7 +129,7 @@
           </div>
         </section>
         
-        <section id="nosql" class="py-5 bg-light">
+        <section id="nosql" class="py-5">
           <div class="container">
             <h2 id="nosql">NoSQL</h2>
               <p>NoSQL-tietokanta eroaa perinteisestä relaatiotietokannasta siinä, että se ei käytä relaatiomallia tietojen tallentamiseen. Relaatiotietokannat perustuvat taulukkomalliin, jossa tiedot tallennetaan tauluihin, jotka ovat keskenään kytköksissä. Sen sijaan NoSQL-tietokannat käyttävät esimerkiksi avain-arvo-, dokumentti-, sarake- tai grafiikkamallia tiedon järjestämiseen.</p>
@@ -148,7 +140,7 @@
         </section>
 
         
-        <section id="suunnittelu" class="py-5 bg-light">
+        <section id="suunnittelu" class="py-5">
           <div class="container">
             <h2 id="suunnittelu">Tietokannan suunnittelu ja optimointi</h2>
             <p>Tietokannan suunnittelu ja optimointi ovat keskeisiä osa-alueita, joilla varmistetaan tietokannan
@@ -188,10 +180,11 @@
           
         </section>
 
-        <section id="yhteys" class="py-5 bg-light">
+        <section id="yhteys" class="py-5">
           <div class="container">
               <h2>Ota minuun yhteyttä:</h2>
-              <form id="contact-form" action="submit.php" method="post">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3535be85-2e22-427c-ac70-9e5fcdcb031b"
                   <div class="form-group">
                       <label for="name">Nimi:</label>
                       <input
@@ -222,10 +215,11 @@
                         required
                       ></textarea>
                   </div>
+                  <div class="h-captcha" data-captcha="true"></div>
                   <button type="submit" class="btn btn-primary">Lähetä</button>
               </form>
 
-              <p id="response-message"></p>
+              
           </div>
         </section>
     </main>
@@ -245,28 +239,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="app.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        
-        var form = this;
-        var formData = new FormData(form);
-
-        // Tulosta tiedot konsoliin
-        console.log("Lähetettävät tiedot:");
-        for (var pair of formData.entries()) {
-            console.log(pair[0] + ': ' + pair[1]);
-        }
-
-        // Näytä käyttäjälle viesti sivustolla
-        var responseMessage = document.getElementById('response-message');
-        responseMessage.textContent = "Lähetys onnistui";
-        form.reset(); // Tyhjennä lomakekentät
-    });
-});
-
-    </script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  
   
 </body>
 </html>

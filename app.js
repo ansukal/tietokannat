@@ -30,7 +30,7 @@ function backToTop() {
 
 // document.getElementById('contact-form').addEventListener('submit', function(event) {
   
-  event.preventDefault();
+
 
   // Haetaan lomakkeen tiedot
   var name = document.getElementById('name').value;

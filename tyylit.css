@@ -1,6 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* Background */
 body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(#f1eeee, #2f6caa);
    
     
 }
@@ -53,24 +60,29 @@ section {
 
 /* Form */
 form {
-    margin-top: 20px;
+    margin: 20px auto; /* Lisätty marginaalia ylä- ja alapuolelle, ja keskitetty */
+    max-width: 500px; /* Määritetty maksimileveys */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lisätty pieni varjo */
 }
 
 form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+    width: calc(100% - 20px); /* Otettu huomioon marginaalit */
+    padding: 10px;
+    margin: 10px 0; /* Muutettu marginaalia */
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #f8f9fa; /* Muutettu taustaväriä */
 }
 
 form textarea {
@@ -78,12 +90,13 @@ form textarea {
 }
 
 form button {
-    padding: 10px 20px;
+    padding: 12px 24px; /* Muutettu hieman suuremmaksi */
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Lisätty siirtymä */
 }
 
 form button:hover {
