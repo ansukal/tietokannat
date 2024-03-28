@@ -10,6 +10,12 @@ body {
     background: linear-gradient(#04b9b9, #038a56);
 }
 
+a {
+    color: rgb(90, 74, 74); /* Muuta linkin tekstiväri punaiseksi */
+    text-decoration: none; /* Poista linkin alleviivaus */
+    font-weight: bold; /* Tehosta linkin tekstiä */
+}
+
 .header {
     height: 300px;
     color: rgb(0, 0, 0);
