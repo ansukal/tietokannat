@@ -29,21 +29,21 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #e2e2e2;
+    background-color: #343a40; /* Tumma tausta */
     width: 100%;
-    margin-bottom: 20px; /* Pienennetty marginaalia */
+    margin-bottom: 20px;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-    color: #000000;
+    color: #ffffff; /* Valkoiset tekstit */
 }
 
 .navbar-brand:hover,
 .navbar-brand:focus,
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-    color: #f8f9fa;
+    color: #f8f9fa; /* Tekstin väri hover- ja focus-tiloissa */
 }
 
 .navbar-nav .nav-item {
@@ -51,9 +51,10 @@ body {
 }
 
 .navbar-toggler-icon {
-    background-color: #555555;
-    color:#e2e2e2
-  }
+    background-color: #ffffff; /* Vaihdettu vaakaviivojen väri */
+    color: #000000; /* Vaihdettu vaakaviivojen väri */
+}
+
 
 /* Main Sections */
 section {
