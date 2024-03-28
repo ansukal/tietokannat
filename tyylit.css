@@ -60,29 +60,29 @@ section {
 
 /* Form */
 form {
-    margin: 20px auto; /* Lisätty marginaalia ylä- ja alapuolelle, ja keskitetty */
-    max-width: 500px; /* Määritetty maksimileveys */
+    margin: 20px auto;
+    max-width: 500px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f8f9fa;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lisätty pieni varjo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 form label {
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
 }
 
-form input[type="text"],
+/* Rajoitetaan sähköposti- ja viestikentän leveys */
 form input[type="email"],
 form textarea {
-    width: calc(100% - 20px); /* Otettu huomioon marginaalit */
-    padding: 10px;
-    margin: 10px 0; /* Muutettu marginaalia */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f9fa; /* Muutettu taustaväriä */
+    width: 100%;
+    max-width: 100%; /* Lisätty rajoitus */
 }
 
 form textarea {
@@ -90,13 +90,14 @@ form textarea {
 }
 
 form button {
-    padding: 12px 24px; /* Muutettu hieman suuremmaksi */
+    width: 100%;
+    padding: 12px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Lisätty siirtymä */
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
