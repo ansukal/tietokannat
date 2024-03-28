@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,14 +8,11 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(#04b9b9, #038a56);
-   
-    
 }
 
 .header {
-    
-    height: 300px; /* Määritä headerin korkeus tarpeen mukaan */
-    color: rgb(0, 0, 0); 
+    height: 300px;
+    color: rgb(0, 0, 0);
     text-align: right;
     display: flex;
     justify-content: right;
@@ -52,14 +49,12 @@ body {
 
 .navbar-toggler-icon {
     background-color: transparent; /* Läpinäkyvä tausta */
-    color: #000000; /* Vaihdettu vaakaviivojen väri */
+    color: #ffffff; /* Valkoinen väri */
 }
-
 
 /* Main Sections */
 section {
     padding: 20px 0;
-
 }
 
 /* Custom CSS */
@@ -120,7 +115,6 @@ section {
 form button[type="submit"] {
     font-size: 16px;
 }
-
 
 /* Footer */
 footer {
