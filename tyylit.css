@@ -49,7 +49,7 @@ a {
 .navbar-brand:focus,
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-    color: #f8f9fa; /* Tekstin väri hover- ja focus-tiloissa */
+    color: #2b3f52; /* Tekstin väri hover- ja focus-tiloissa */
 }
 
 .navbar-nav .nav-item {
@@ -57,8 +57,10 @@ a {
 }
 
 .navbar-toggler-icon {
+    
     background-color: transparent; /* Läpinäkyvä tausta */
-    color: #061109; /* Valkoinen väri */
+    color: #061109; 
+
 }
 
 /* Main Sections */
