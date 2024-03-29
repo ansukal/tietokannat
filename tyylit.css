@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Monofett-Regular;
+    src: url(/Monofett-Regular.ttf);
+}
+
+
 /* Background */
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     background: linear-gradient(#04b9b9, #038a56);
 }
 
@@ -19,31 +25,30 @@ a {
 .header {
     background-image: url('./kuvat/pixabay.jpg');
     background-size: cover;
-    height: 300px;
-    color: rgb(0, 0, 0);
+    height: 200px;
+    color: #000000;
     text-align: center;
-    font-size: larger;
-    display: flex;
-    
+    padding-top: 55px;
+    font-family: Monofett-Regular;
+    font-size: x-large;
+  
     
 }
 
-.header h1 {
-    margin: 0;
-    padding: 20px;
-}
+
 
 /* Navbar */
 .navbar {
     
     width: 100%;
+    font-family: monospace;
     
 
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
-    color: #ffffff; /* Valkoiset tekstit */
+    color: #7e190c; /* Valkoiset tekstit */
 }
 
 .navbar-brand:hover,
@@ -67,12 +72,14 @@ a {
 /* Main Sections */
 section {
     padding: 20px 0;
+    font-family: monospace;
 }
 
 /* Custom CSS */
 #contact-form {
     max-width: 600px; /* Rajoitetaan lomakkeen leveys */
     margin: auto; /* Keskitys näytölle */
+    font-family: monospace;
 }
 
 #contact-form .form-group {
@@ -101,7 +108,7 @@ section {
 #contact-form button[type="submit"] {
     width: 100%; /* Täyttää lomakkeen leveyden */
     padding: 12px;
-    background-color: #007bff;
+    background-color: #e29d07;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -110,7 +117,7 @@ section {
 }
 
 #contact-form button[type="submit"]:hover {
-    background-color: #748ba3;
+    background-color: #b16e18;
 }
 
 #response-message {
@@ -118,10 +125,7 @@ section {
     text-align: center;
 }
 
-/* Väritys captcha-laatikolle */
-.h-captcha {
-    margin-bottom: 10px;
-}
+
 
 /* Pienennetään fonttikokoa lähetä-napille */
 form button[type="submit"] {
@@ -134,6 +138,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    font-family: monospace;
 }
 
 footer p {

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="tyylit.css">
     <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -18,7 +19,6 @@
   <header class="header">
     <div class="container">
       <h1>Tietokantamaailma</h1>
-      <p><i>Tietoa ja kantoja juuri sinulle</i></p>
     </div>
   </header>
 
@@ -32,32 +32,28 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="50" fill="currentColor" class="bi bi-list-stars" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5"/>
-          <path d="M2.242 2.194a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.28.28 0 0 0-.094.3l.173.569c.078.256-.213.462-.423.3l-.417-.324a.27.27 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.28.28 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.27.27 0 0 0 .259-.194zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.28.28 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.27.27 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.28.28 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.27.27 0 0 0 .259-.194zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.28.28 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.27.27 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.28.28 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.27.27 0 0 0 .259-.194z"/>
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
       </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#johdanto"> Johdanto</a></li>
-                <li class="nav-item"><a class="nav-link" href="#perustiedot">Mikä ihmeen tietokanta?</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sql"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database-fill" viewBox="0 0 16 16">
+                <li class="nav-item"><a class="nav-link" href="#perustiedot"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-database-fill" viewBox="0 0 16 16">
                   <path d="M3.904 1.777C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4s-.875 1.755-1.904 2.223C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777C2.875 5.755 2 5.007 2 4s.875-1.755 1.904-2.223"/>
                   <path d="M2 6.161V7c0 1.007.875 1.755 1.904 2.223C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777C13.125 8.755 14 8.007 14 7v-.839c-.457.432-1.004.751-1.49.972C11.278 7.693 9.682 8 8 8s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
                   <path d="M2 9.161V10c0 1.007.875 1.755 1.904 2.223C4.978 12.711 6.427 13 8 13s3.022-.289 4.096-.777C13.125 11.755 14 11.007 14 10v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
                   <path d="M2 12.161V13c0 1.007.875 1.755 1.904 2.223C4.978 15.711 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13v-.839c-.457.432-1.004.751-1.49.972-1.232.56-2.828.867-4.51.867s-3.278-.307-4.51-.867c-.486-.22-1.033-.54-1.49-.972"/>
-                </svg>SQL ja NoSQL</a></li>
+                </svg> Mikä ihmeen tietokanta?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sql">SQL ja NoSQL</a></li>
                 <li class="nav-item"><a class="nav-link" href="#suunnittelu">Suunnittelu</a></li>
                 <li class="nav-item"><a class="nav-link" href="#yhteys"><i class="bi bi-postcard-heart-fill"></i>Ota yhteyttä</a></li>
             </ul>
         </div>
     </div>
   </nav>
-  
-      
+
 
     <main>
-        <section id="johdanto" class="py-5">
+        <section id="johdanto" class="py-3">
             <div class="container">
               
                 <h2>Johdanto</h2>
@@ -89,7 +85,7 @@
           </div>
         </section>
 
-        <section id="perustiedot" class="py-5">
+        <section id="perustiedot" class="py-3">
           <div class="container">
                 <h2>Tietokantojen perusteet</h2>
                 <p class="font-weight-bold">Tietokanta on keskeinen työkalu tietojen keräämiseen, tallentamiseen ja järjestämiseen, ja se tarjoaa monia etuja verrattuna yksinkertaisiin 
@@ -122,7 +118,7 @@
           </div>
         </section>
     
-        <section id="sql" class="py-5">
+        <section id="sql" class="py-3">
           <div class="container">
             <h2>SQL</h2>
             <p>SQL-kieli (Structured Query Language) on relaatiotietokannoissa käytetty kieli. Tietokantaan voi tehdä erilaisia hakuja, muutoksia ja lisäyksiä käyttämällä SQL-kieltä ja sen komentoja. Komennot muodostuvat avainsanoista (SELECT ja WHERE) tai muista arvoista, kuten taulujen ja sarakkeiden nimistä.</p>
@@ -132,11 +128,12 @@
 
             <p>Vastaukseksi saat listan hedelmistä:</p>
       
-
+            <a href="./kuvat/hedelmakoritulokset.png" target="_blank" rel="noopener noreferrer">
             <img src="./kuvat/hedelmakoritulokset.png" alt="Kuva tietokannan sisällöstä" title="SQL-tietokanta esimerkki" class="img-fluid custom-image" />
+            </a>
 
-           
-
+            <br/>
+            <br/>
             <p>Tässä tietokannan koodi:</p>
             
 
@@ -144,14 +141,16 @@
               <img src="./kuvat/Hedelmakorikoodi.png" alt="Kuva sql koodista" title="SQL-tietokanta esimerkki" class="img-fluid custom-image" />
             </a>
 
-            <h3><a href="https://sqlfiddle.com/mariadb/online-compiler?id=947c4fe1-77ca-4e2f-ba14-b97b4a659fb8" target="_blank"> <p>Käy testaamassa tietokannan muokkaamista</a> sqlfiddle.com -sivulla</p></h3>
+            <br/>
+            <br/>
 
-            
-            
+            <h3> <p>Käy testaamassa tietokannan muokkaamista: 
+              <br/>
+              <a href="https://sqlfiddle.com/mariadb/online-compiler?id=947c4fe1-77ca-4e2f-ba14-b97b4a659fb8" target="_blank">sqlfiddle.com</p></a></h3>
           </div>
         </section>
         
-        <section id="nosql" class="py-5">
+        <section id="nosql" class="py-3">
           <div class="container">
             <h2 id="nosql">NoSQL</h2>
               <p>NoSQL-tietokanta eroaa perinteisestä relaatiotietokannasta siinä, että se ei käytä relaatiomallia tietojen tallentamiseen. Relaatiotietokannat perustuvat taulukkomalliin, jossa tiedot tallennetaan tauluihin, jotka ovat keskenään kytköksissä. Sen sijaan NoSQL-tietokannat käyttävät esimerkiksi avain-arvo-, dokumentti-, sarake- tai grafiikkamallia tiedon järjestämiseen.</p>
@@ -162,7 +161,7 @@
         </section>
 
         
-        <section id="suunnittelu" class="py-5">
+        <section id="suunnittelu" class="py-3">
           <div class="container">
             <h2 id="suunnittelu">Tietokannan suunnittelu ja optimointi</h2>
             <p>Tietokannan suunnittelu ja optimointi ovat keskeisiä osa-alueita, joilla varmistetaan tietokannan
@@ -233,14 +232,12 @@
         </section>
     </main>
 
-    <footer class="text-light py-4">
+    <footer class="text-light py-3">
         <div class="container">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-joystick" viewBox="0 0 16 16">
             <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
             <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
-          </svg>
-            
-            <p>Ansu Kailaanmäki</p>
+          </svg>  Ansu Kailaanmäki
         </div>
     </footer>
 
