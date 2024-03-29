@@ -108,7 +108,7 @@ section {
 #contact-form button[type="submit"] {
     width: 100%; /* Täyttää lomakkeen leveyden */
     padding: 12px;
-    background-color: #be8407;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -125,10 +125,7 @@ section {
     text-align: center;
 }
 
-/* Väritys captcha-laatikolle */
-.h-captcha {
-    margin-bottom: 10px;
-}
+
 
 /* Pienennetään fonttikokoa lähetä-napille */
 form button[type="submit"] {
