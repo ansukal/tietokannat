@@ -42,7 +42,6 @@ a {
     
     width: 100%;
     font-family: monospace;
-    
 
 }
 
@@ -73,6 +72,7 @@ a {
 section {
     padding: 20px 0;
     font-family: monospace;
+    width: auto;
 }
 
 /* Custom CSS */
