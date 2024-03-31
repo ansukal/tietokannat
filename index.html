@@ -194,12 +194,11 @@
           <div class="container">
               <h2>Ota minuun yhteyttä:</h2>
               <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" >
+                <input type="hidden" name="access_key" value="fcb11250-6c61-42bd-9be5-3f5030129c88">
                   <div class="form-group">
                       <label for="name">Nimi:</label>
                       <input
                         type="text"
-                        id="name"
                         name="name"
                         class="form-control"
                         required
@@ -209,7 +208,6 @@
                       <label for="email">Sähköposti:</label>
                       <input
                         type="email"
-                        id="email"
                         name="email"
                         class="form-control"
                         required
@@ -249,6 +247,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="app.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    
     <script>
       
         document.addEventListener('DOMContentLoaded', function () {
@@ -264,7 +264,7 @@
           })
         });
       
-  </script>
+    </script>
   
   
 </body>
