@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: Monofett-Regular;
-    src: url(/Monofett-Regular.ttf);
+    font-family: 'Monofett-Regular';
+    src: url('/Monofett-Regular.ttf');
 }
 
 
@@ -29,7 +29,7 @@ a {
     color: #000000;
     text-align: center;
     padding-top: 30px;
-    font-family: 'Monofett-Regular';
+    font-family: 'Monofett-Regular.ttf';
     display: flex;  
 }
 
