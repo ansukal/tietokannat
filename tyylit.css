@@ -30,7 +30,7 @@ a {
     text-align: center;
     padding-top: 55px;
     font-family: Monofett-Regular;
-    font-size: x-large;
+    display: flex;
   
     
 }
