@@ -30,7 +30,7 @@ a {
     text-align: center;
     padding-top: 55px;
     font-family: Monofett-Regular;
-    font-size: x-large;
+    display: flex;
   
     
 }
@@ -47,7 +47,8 @@ a {
 
 .navbar-brand,
 .navbar-nav .nav-link {
-    color: #7e190c; /* Valkoiset tekstit */
+    color: #7e190c; 
+    padding: 30px;
 }
 
 .navbar-brand:hover,
