@@ -25,7 +25,7 @@ a {
     background-image: url('./kuvat/pexels-lukas-1419923.jpg');
     background-size: contain;
     background-repeat: none;
-    height: 35vh; /* Koko näytön korkeus */
+    height: auto; /* Koko näytön korkeus */
     font-family: monospace;
     display: flex;
     align-items: center; /* Tekstin keskittäminen pystysuunnassa */
