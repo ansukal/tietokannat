@@ -24,16 +24,15 @@ a {
 .header {
     background-image: url('./kuvat/pexels-lukas-1419923.jpg');
     background-size: cover;
-    height: 100vh; /* Koko näytön korkeus */
+    height: 95vh; /* Koko näytön korkeus */
     font-family: monospace;
     display: flex;
     align-items: center; /* Tekstin keskittäminen pystysuunnassa */
-    justify-content: center; /* Tekstin keskittäminen vaakasuunnassa */
     text-align: center; /* Tekstin keskittäminen vaakasuunnassa */
 }
 
 h1 {
-    font-size: 6vw; /* Fonttikoko 6% näytön leveydestä */
+    font-size: 7vw; /* Fonttikoko 6% näytön leveydestä */
     color: #5e0404;
     margin-top: 100px;
 }
