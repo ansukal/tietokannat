@@ -25,8 +25,10 @@ a {
 
 .header {
     background-image: url('./kuvat/pixabay.jpg');
+    filter: brightness(70%);
     background-position: center;
     background-size: cover;
+    filter: brightness(70%);
     height: 200px;
     color: #000000;
     text-decoration: wavy;
