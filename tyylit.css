@@ -77,7 +77,6 @@ section {
 
 /* Yhteystietolomakkeen tyyli */
 #contact-form {
-    max-width: 600px;
     margin: auto;
     font-family: monospace;
 }
@@ -153,7 +152,7 @@ footer p {
 }
 
 /* Responsiivinen muotoilu */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: auto) {
     /* Pienennä fonttikokoa */
     h1 {
         font-size: 50px;
