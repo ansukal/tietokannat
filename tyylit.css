@@ -25,6 +25,7 @@ a {
 
 .header {
     background-image: url('./kuvat/pixabay.jpg');
+    background-position: center;
     background-size: cover;
     height: 200px;
     color: #000000;
