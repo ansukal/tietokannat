@@ -23,7 +23,7 @@ a {
 /* Headerin tyyli */
 .header {
     background-image: url('./kuvat/pexels-lukas-1419923.jpg');
-    background-size: cover;
+    background-size: contain;
     height: 100vh; /* Koko näytön korkeus */
     font-family: monospace;
     display: flex;
