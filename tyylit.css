@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Minecraft';
-    src: url('fonts/Minecraft.ttf') format('truetype');
-    font-size: 30px;
-}
-
 
 /* Background */
 body {
@@ -24,17 +18,22 @@ a {
 }
 
 .header {
-    background-image: url('./kuvat/pixabay.jpg');
-    background-position: center;
+    background-image: url('./kuvat/pexels-lukas-1419923.jpg');
     background-size: cover;
     height: 200px;
-    color: #000000;
-    text-align: center;
-    padding-top: 50px;
-    font-family: 'Minecraft';
-    display: flex;  
+    font-family: 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    filter: brightness(85%); /* Säädä prosentti haluamallasi tavalla */
+    align-items: center; /* Tekstin keskittäminen pystysuunnassa */
 }
 
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #000000;
+    background-color: #ffffff; /* Aseta taustaväri tarpeidesi mukaan */
+    
+}
 
 
 /* Navbar */
