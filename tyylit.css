@@ -5,16 +5,12 @@
     box-sizing: border-box;
 }
 
-/* Määritä fontti Monofett-Regular */
-@font-face {
-    font-family: 'Monofett-Regular';
-    src: url('/fonts/Monofett-Regular.ttf');
-}
+
 
 /* Taustaväri ja fontti koko sivulle */
 body {
     font-family: monospace;
-    background: linear-gradient(#04b9b9, #038a56);
+    background: linear-gradient(#a7dada, #038a56);
 }
 
 /* Linkin tyyli */
@@ -28,8 +24,8 @@ a {
 .header {
     background-image: url('./kuvat/pexels-lukas-1419923.jpg');
     background-size: cover;
-    height: 400px;
-    font-family: 'Monofett-Regular';
+    height: 100vh; /* Koko näytön korkeus */
+    font-family: monospace;
     display: flex;
     align-items: center; /* Tekstin keskittäminen pystysuunnassa */
     justify-content: center; /* Tekstin keskittäminen vaakasuunnassa */
@@ -37,9 +33,9 @@ a {
 }
 
 h1 {
-    font-size: 5vw;
-    color: #000000;
-    margin-top: 200px; /* Lisätään ylimääräinen marginaali otsikon yläpuolelle */
+    font-size: 6vw; /* Fonttikoko 6% näytön leveydestä */
+    color: #5e0404;
+    margin-top: 100px;
 }
 
 
