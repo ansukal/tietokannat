@@ -7,7 +7,7 @@
 @font-face {
     font-family: 'Minecraft';
     src: url('fonts/Minecraft.ttf') format('truetype');
-    font-size: xx-large;
+    font-size: 30px;
 }
 
 
@@ -25,12 +25,10 @@ a {
 
 .header {
     background-image: url('./kuvat/pixabay.jpg');
-    filter: brightness(50%);
     background-position: center;
     background-size: cover;
     height: 200px;
     color: #000000;
-    text-decoration: wavy;
     text-align: center;
     padding-top: 50px;
     font-family: 'Minecraft';
